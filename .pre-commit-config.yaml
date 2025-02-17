@@ -16,7 +16,7 @@ repos:
   - id: rst-inline-touching-normal     # Detect mistake of inline code touching normal text in rst
 
 - repo: https://github.com/asottile/pyupgrade
-  rev: v3.19.0
+  rev: v3.19.1
   hooks:
   - id: pyupgrade
     args: [--py38-plus]
@@ -27,7 +27,7 @@ repos:
   - id: flynt
 
 - repo: https://github.com/pycqa/isort
-  rev: 5.13.2
+  rev: 6.0.0
   hooks:
   - id: isort
     args: [--profile, black]
@@ -52,20 +52,20 @@ repos:
     args: [--mapping, '2', --sequence, '2', --offset, '0']
 
 - repo: https://github.com/codespell-project/codespell
-  rev: v2.3.0
+  rev: v2.4.1
   hooks:
   - id: codespell
     args: [--toml, pyproject.toml]
     additional_dependencies: [tomli]
 
 - repo: https://github.com/psf/black
-  rev: 24.10.0
+  rev: 25.1.0
   hooks:
   - id: black
     args: [--config, pyproject.toml]
 
 - repo: https://github.com/pycqa/flake8
-  rev: 7.1.1
+  rev: 7.1.2
   hooks:
   - id: flake8
     args: [--config, .flake8]
